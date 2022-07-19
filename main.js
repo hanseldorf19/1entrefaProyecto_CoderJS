@@ -3,6 +3,7 @@ let nameUser = prompt('Bienvenido a Open Culture Club, ¿Cual es tu nombre?');
 console.log(nameUser);
 let userMyCultHub = [];
 const tusGenPelis = [];
+const tusPelis =[];
 const tusActores = [];
 const tusGenMusica = [];
 
@@ -128,6 +129,27 @@ function agregarGenMúsica() {
 
 
 // Suguerir
+
+function sugerirPelis() {
+    if (SelectGenPelis1 == 'Accion' || SelectGenPelis1 == 'accion' || SelectGenPelis1 == 'ACCIÓN'  ) {
+    
+    let opcion = Number(prompt(`Quizá te guste alguna de esas pelis:
+    \n ${topPelisAccion}
+    \n Elige 1, 2, 3 para añadir a tu hub o 4 para todas`));
+    
+        switch (opcion) {
+            case 1:
+                tusActores.push('Arnold Swarzeneger');
+                console.log(tusActores);
+                break;
+            case 2:
+                sugerir2();    
+                    break;
+            default:
+                break;
+            }
+        }
+    }
 
 function sugerir1() {
 if (SelectGenPelis1 == 'Accion' || SelectGenPelis1 == 'accion' || SelectGenPelis1 == 'ACCIÓN'  ) {
