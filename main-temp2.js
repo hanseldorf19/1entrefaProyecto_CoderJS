@@ -41,6 +41,3 @@ function processGenPelis(){
 }
 
 processGenPelis();  // Lo he tomado de un foro, https://www.arkaitzgarro.com/javascript/capitulo-16.html pero No me funcion !!--(
-
-
-// Sacar peliculas
